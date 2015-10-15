@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub HTML Preview",
+  "version": "0.0.1",
+   "description": "Adds a button for HTML preview on GitHub.",
+  "content_scripts": [
+    {
+      "matches": [ "https://github.com/*" ],
+      "js": [ "includes/github-htmlpreview.js" ],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": { "128": "icons/github_icon_128px.png" },
+  "permissions": [ "https://github.com/*" ]
+}
